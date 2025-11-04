@@ -1,0 +1,30 @@
+{
+  "name": "bun-plugin-react-compiler",
+  "version": "0.1.1",
+  "module": "./dist/react-compiler.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/bun": "latest",
+    "tsdown": "^0.15.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.28.5",
+    "babel-plugin-react-compiler": "^1.0.0"
+  },
+  "scripts": {
+    "build": "bun run --bun tsdown"
+  },
+  "main": "./dist/react-compiler.js",
+  "exports": {
+    ".": "./dist/react-compiler.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/react-compiler.d.ts"
+}
