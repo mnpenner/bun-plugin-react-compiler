@@ -1,6 +1,6 @@
 {
   "name": "bun-plugin-react-compiler",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Bun plugin for React Compiler.",
   "repository": {
     "type": "git",

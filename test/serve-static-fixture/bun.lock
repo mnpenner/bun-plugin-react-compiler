@@ -8,7 +8,7 @@
         "react-dom": "^19.2.4",
       },
       "devDependencies": {
-        "bun-plugin-react-compiler": "^0.2.0",
+        "bun-plugin-react-compiler": "^0.3.1",
       },
     },
   },
@@ -61,7 +61,7 @@
 
     "browserslist": ["browserslist@4.28.1", "", { "dependencies": { "baseline-browser-mapping": "^2.9.0", "caniuse-lite": "^1.0.30001759", "electron-to-chromium": "^1.5.263", "node-releases": "^2.0.27", "update-browserslist-db": "^1.2.0" }, "bin": { "browserslist": "cli.js" } }, "sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA=="],
 
-    "bun-plugin-react-compiler": ["bun-plugin-react-compiler@0.2.0", "", { "dependencies": { "@babel/core": "^7.28.5", "babel-plugin-react-compiler": "^1.0.0" } }, "sha512-WbkELdSgP3nxkVWPhdGM7s26ISwaxf87gAVSrElizeO9vTNb1AIwEua//J36GUxYiP9cvXvbNU8fUxwGCYpftg=="],
+    "bun-plugin-react-compiler": ["bun-plugin-react-compiler@0.3.1", "", { "peerDependencies": { "@babel/core": "^7.29.0", "babel-plugin-react-compiler": "^1.0.0" } }, "sha512-hNbueWbgqaV/UZtPQDL3lhmma2Uuo1dxzoV+NRwCYIturtjIKQJAipHBwVXk1uGKwuOKeqmRHBGn8AH6GEaHSQ=="],
 
     "caniuse-lite": ["caniuse-lite@1.0.30001769", "", {}, "sha512-BCfFL1sHijQlBGWBMuJyhZUhzo7wer5sVj9hqekB/7xn0Ypy+pER/edCYQm4exbXj4WiySGp40P8UuTh6w1srg=="],
 

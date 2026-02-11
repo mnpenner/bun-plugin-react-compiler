@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "bun-plugin-react-compiler": "^0.2.0"
+    "bun-plugin-react-compiler": "^0.3.1"
   },
   "dependencies": {
     "react": "^19.2.4",
