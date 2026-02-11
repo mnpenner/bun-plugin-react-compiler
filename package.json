@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "bun run build.ts && tsc -p tsconfig.build.json",
-    "test:types": "tsc --noEmit",
+    "test:types": "tsc -p tsconfig.typecheck.json",
     "test:impl": "bun test",
     "test": "bun run --parallel 'test:*'"
   },

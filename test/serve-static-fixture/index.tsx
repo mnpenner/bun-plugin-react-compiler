@@ -5,5 +5,10 @@ function App() {
   return <h1>Hello React</h1>;
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error('Missing element with id "root"');
+}
+
+const root = ReactDOM.createRoot(rootElement);
 root.render(<App />);
