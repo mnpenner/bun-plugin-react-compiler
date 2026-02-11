@@ -6,7 +6,7 @@
 
 ```ts
 import {build} from "bun";
-import reactCompiler from "bun-plugin-react-compiler";
+import {reactCompiler} from "bun-plugin-react-compiler";
 
 await Bun.build({
     entrypoints: ["./index.tsx"],
@@ -15,4 +15,11 @@ await Bun.build({
         reactCompiler()
     ],
 });
+```
+
+## Bunfig `serve.static` plugin usage
+
+```toml
+[serve.static]
+plugins = ["bun-plugin-react-compiler"]
 ```

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "bun:test";
+import { $ } from "bun";
 import path from "node:path";
 import { reactCompiler } from "../src/react-compiler";
 
@@ -34,5 +35,14 @@ describe("reactCompiler plugin", () => {
 
     expect(withPlugin).toContain('from "react/compiler-runtime"');
     expect(withPlugin).toContain("_c(");
+  });
+
+  it("loads as a serve.static plugin from bunfig.toml", async () => {
+    const fixtureDir = path.join(import.meta.dir, "serve-static-fixture");
+    const run = await $`cd ${fixtureDir} && timeout 5s bun index.html`.nothrow();
+    const stderr = new TextDecoder().decode(run.stderr);
+
+    expect(stderr).not.toContain("is not a valid bundler plugin");
+    expect(stderr).not.toContain("setup() is missing");
   });
 });

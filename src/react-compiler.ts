@@ -46,4 +46,5 @@ export function reactCompiler(
     };
 }
 
-export default reactCompiler;
+// export default with default options to support [serve.static]; https://github.com/mnpenner/bun-plugin-react-compiler/issues/1#issue-3605622798
+export default reactCompiler()
