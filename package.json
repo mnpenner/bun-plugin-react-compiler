@@ -17,9 +17,10 @@
     "@types/bun": "latest",
     "typescript": "^5"
   },
-  "dependencies": {
-    "@babel/core": "^7.28.5",
-    "babel-plugin-react-compiler": "^1.0.0"
+  "dependencies": {},
+  "peerDependencies": {
+    "babel-plugin-react-compiler": "^1.0.0",
+    "@babel/core": "^7.29.0"
   },
   "scripts": {
     "build": "bun run build.ts && tsc -p tsconfig.build.json"
