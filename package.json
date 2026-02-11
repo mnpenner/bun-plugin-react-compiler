@@ -15,15 +15,19 @@
   "devDependencies": {
     "@types/babel__core": "^7.20.5",
     "@types/bun": "latest",
+    "baseline-browser-mapping": "^2.9.19",
+    "react": "^19.2.4",
     "typescript": "^5"
   },
-  "dependencies": {},
   "peerDependencies": {
-    "babel-plugin-react-compiler": "^1.0.0",
-    "@babel/core": "^7.29.0"
+    "@babel/core": "^7.29.0",
+    "babel-plugin-react-compiler": "^1.0.0"
   },
   "scripts": {
-    "build": "bun run build.ts && tsc -p tsconfig.build.json"
+    "build": "bun run build.ts && tsc -p tsconfig.build.json",
+    "test:types": "tsc --noEmit",
+    "test:impl": "bun test",
+    "test": "bun run --parallel 'test:*'"
   },
   "main": "./dist/react-compiler.js",
   "exports": {
